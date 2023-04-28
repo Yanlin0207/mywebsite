@@ -1,0 +1,50 @@
+.wrap {
+  .sidemenu {
+    box-shadow: 0 2px 6px rgba(26, 31, 28, .08);
+
+    // outline: 1px solid #000;
+    .namecard {
+
+      // outline: 1px solid #3a0ae9;
+      .photo {
+        // display:inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 50%;
+
+        img {
+          width: 100%;
+          height: auto;
+          margin-top: -20%;
+        }
+      }
+
+      .text {
+        text-align: center;
+
+        .name {
+          font-size: 20px;
+          font-weight: bolder;
+          color: #2AABEE;
+        }
+
+        .job,
+        .city {
+          color: #8C8C8C;
+        }
+      }
+    }
+  }
+
+  .content {
+    outline: 1px solid #c90404;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .content{
+    margin: auto;
+  }
+}

@@ -482,15 +482,37 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<div class="wrap">
-  <div class="sidemenu">
+<div class="d-flex flex-wrap m-2 wrap">
+  <div class="col-xl-2 offset-xl-1 col-lg-3 col-10 offset-1 sidemenu">
     <div class="namecard">
-      <div class="photo"></div>
-      <div class="text"></div>
+      <div class="mt-5 m-auto photo">
+        <img src="../assets/photo.jpg" alt="photo">
+      </div>
+      <div class="mt-2 text">
+        <div class="name">Yen-Lin Liu</div>
+        <div class="mt-2 job">Front-end Developer</div>
+        <div class="mt-2 d-flex justify-content-center city">
+          <div class="icon">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 18C9 18 15.75 11.6029 15.75 6.75C15.75 3.02208 12.7279 0 9 0C5.27208 0 2.25 3.02208 2.25 6.75C2.25 11.6029 9 18 9 18ZM9 10.125C7.13604 10.125 5.625 8.61396 5.625 6.75C5.625 4.88604 7.13604 3.375 9 3.375C10.864 3.375 12.375 4.88604 12.375 6.75C12.375 8.61396 10.864 10.125 9 10.125Z"
+                fill="#616163" />
+            </svg>
+          </div>
+          <div>Taoyuan, Taiwan</div>
+        </div>
+      </div>
     </div>
-    <div class="menu"></div>
+    <hr>
+    <nav class="menu">
+      <a href="">Profile</a>
+      <a href="">Resume</a>
+      <a href="">Portfolio</a>
+    </nav>
   </div>
-  <div class="content"></div>
+  <div class="col-xl-8 col-lg-7 col-10 content">
+    <router-outlet></router-outlet>
+  </div>
 </div>
 
-<router-outlet></router-outlet>
+
