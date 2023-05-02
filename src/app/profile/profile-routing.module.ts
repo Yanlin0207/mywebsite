@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ResumeMenuComponent } from './resume-menu/resume-menu.component';
+import { ProfileMenuComponent } from './profile-menu/profile-menu.component';
 
 const routes: Routes = [
   {
     path: "",
-    component: ResumeMenuComponent,
+    component: ProfileMenuComponent,
   }
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ResumeRoutingModule { }
+export class ProfileRoutingModule { }

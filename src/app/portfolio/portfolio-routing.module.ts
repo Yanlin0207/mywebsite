@@ -9,12 +9,12 @@ const routes: Routes = [
     path: "",
     component: PortfolioMenuComponent,
     children: [
-      { path: "", pathMatch: "full", redirectTo: "portfolio-detail" },
+      // { path: "", pathMatch: "full", redirectTo: "portfolio-detail" },
       {
         path: "portfolio-detail",
         component: PortfolioDetailComponent,
       },
-      { path: "**", redirectTo: "portfolio-detail", pathMatch: "full" }
+      // { path: "**", redirectTo: "portfolio-detail", pathMatch: "full" }
     ]
   }
 ];

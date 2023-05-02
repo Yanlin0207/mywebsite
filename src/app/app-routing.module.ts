@@ -12,6 +12,16 @@ const routes: Routes = [
     redirectTo: "portfolio-menu",
     pathMatch: "full",
   },
+  {
+    path: "profile-menu",
+    loadChildren: () =>
+      import("./profile/profile.module").then((m) => m.ProfileModule),
+  },
+  {
+    path: "resume-menu",
+    loadChildren: () =>
+      import("./resume/resume.module").then((m) => m.ResumeModule),
+  },
   { path: "**", redirectTo: "portfolio-menu", pathMatch: "full" },
 ];
 
