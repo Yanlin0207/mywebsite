@@ -44,7 +44,7 @@
     }
 
     .menu {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
 
       li {
         position: relative;
@@ -88,8 +88,16 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
+  .content {
+    padding: 30px;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
   .content {
     margin: auto;
+    padding: 0;
   }
 }
