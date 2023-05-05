@@ -3,26 +3,26 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: "portfolio-menu",
+    path: "portfolio",
     loadChildren: () =>
       import("./portfolio/portfolio.module").then((m) => m.PortfolioModule),
   },
   {
     path: "",
-    redirectTo: "portfolio-menu",
+    redirectTo: "portfolio",
     pathMatch: "full",
   },
-  {
-    path: "profile-menu",
-    loadChildren: () =>
-      import("./profile/profile.module").then((m) => m.ProfileModule),
-  },
-  {
-    path: "resume-menu",
-    loadChildren: () =>
-      import("./resume/resume.module").then((m) => m.ResumeModule),
-  },
-  { path: "**", redirectTo: "portfolio-menu", pathMatch: "full" },
+  // {
+  //   path: "profile",
+  //   loadChildren: () =>
+  //     import("./profile/profile.module").then((m) => m.ProfileModule),
+  // },
+  // {
+  //   path: "resume",
+  //   loadChildren: () =>
+  //     import("./resume/resume.module").then((m) => m.ResumeModule),
+  // },
+  { path: "**", redirectTo: "portfolio", pathMatch: "full" },
 ];
 
 @NgModule({
