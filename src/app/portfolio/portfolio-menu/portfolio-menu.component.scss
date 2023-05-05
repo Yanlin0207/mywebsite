@@ -1,19 +1,44 @@
 .item {
   padding: 10px;
 
-  &:hover{
-    cursor: pointer;
-    // transform: translateY(-3px);
-    // box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-  }
-
   .cover {
     overflow: hidden;
     border-radius: 5px;
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      .text{
+        font-size: 18px;
+        font-weight: bolder;
+        color: #fff;
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .overlay {
+        opacity: 1;
+      }
+    }
   }
 
   img {
     width: 100%;
   }
+
+
 
 }

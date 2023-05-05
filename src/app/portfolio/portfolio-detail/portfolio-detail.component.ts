@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio-detail.component.scss']
 })
 export class PortfolioDetailComponent {
-
+  constructor(
+  ) {
+    console.log("hi")
+  }
 }
