@@ -1,1 +1,12 @@
-<p>portfolio-detail works!</p>
+<p>{{title}}</p>
+<!-- <div *ngFor="let item of data" class="">
+  <img src={{item.src}} alt={{title}}>
+</div> -->
+<div class="detail_content">
+  <div *ngFor="let item of data[id].intro" class="">
+    <div class="pic">
+      <img src={{item.src}} alt="">
+    </div>
+    <div class="text">{{item.text}}</div>
+  </div>
+</div>
