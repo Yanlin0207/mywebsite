@@ -1,7 +1,7 @@
 <div class="row">
-  <div *ngFor="let item of data" class="col-sm-6 col-md-4 col-lg-4 item">
-    <div class="cover" [routerLink]="['/portfolio/portfolio-menu/case']">
-      <img src="../../../assets/wallpaperflare.com_wallpaper-1.jpg" alt="{{item.title}}">
+  <div *ngFor="let item of data" class="col-sm-6 col-md-6 col-lg-4 item">
+    <div class="cover" [routerLink]="['/portfolio/portfolio-menu/case',{id:item.id}]">
+      <img src="{{item.src}}" alt="{{item.title}}">
       <div class="overlay">
         <div class="text">{{item.title}}</div>
       </div>

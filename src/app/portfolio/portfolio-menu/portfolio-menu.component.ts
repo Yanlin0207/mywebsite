@@ -8,16 +8,19 @@ import { Component } from '@angular/core';
 export class PortfolioMenuComponent {
   data = [
     {
-      id: 0,
+      id: '0',
       title: '設備資訊管理平台',
+      src:'../../../assets/eim/eim-cover.png'
     },
     {
-      id: 1,
+      id: '1',
       title: '戰情看板',
+      src:'../../../assets/chitec/chitec-cover.png'
     },
     {
-      id: 2,
+      id: '2',
       title: '自動化管理系統',
+      src:'../../../assets/malink/malink-cover.png'
     }
   ]
 
