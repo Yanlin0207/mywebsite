@@ -4,6 +4,7 @@
     border-radius: 5px;
     margin-bottom: 30px;
     height: fit-content;
+    margin-top: 30px;
 
     .namecard {
 
@@ -85,9 +86,9 @@
     }
   }
 
-  .content {
-    outline: 1px solid #c90404;
-  }
+  // .content {
+  //   outline: 1px solid #c90404;
+  // }
 }
 
 @media screen and (min-width: 992px) {
