@@ -12,10 +12,16 @@
     </div>
     <div class="text">{{item.text}}</div>
   </div>
+  <div *ngIf="intro_video" class="video">
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/827220246?h=f9a3025b73" width="960" height="540" frameborder="0"    allowfullscreen></iframe>
+    <div>所有設備重要數據。</div>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/827223105?h=fff9853a91" width="960" height="540" frameborder="0"    allowfullscreen></iframe>
+    <div>設備數據折線圖，時間軸範圍可彈性調整，游標指向欲查看的數據時，畫面資料即停止更新，游標移開後，畫面資料繼續更新，資料不遺漏。</div>
+  </div>
   <div class="d-flex flex-wrap addition">
     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 description">{{description}}</div>
-    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-      <div class="tools">Tools</div>
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 tools">
+      <div class="tools_text">Tools</div>
       <div *ngFor="let item of data[id].tools" class="icon">
         <img src="../../../assets/{{item.src}}" alt="{{item.src}}">
         <span>{{item.name}}</span>
