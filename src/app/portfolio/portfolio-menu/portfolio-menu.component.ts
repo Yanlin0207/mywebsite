@@ -19,8 +19,8 @@ export class PortfolioMenuComponent {
     },
     {
       id: '2',
-      title: '自動化管理系統',
-      src:'../../../assets/malink/malink-cover.png'
+      title: '設備建康管理',
+      src:'../../../assets/ehm/ehm-cover.png'
     }
   ]
 

@@ -109,7 +109,7 @@ export class PortfolioDetailComponent implements OnInit {
       id: '1',
       title: '戰情看板',
       src: '../../../assets/eim/eim-banner.png',
-      description: '',
+      description: '◎ UI/UX : 參與部分設計。\n◎ 前端 : API串接資料設計、實作頁面。\n',
       intro: [
         {
           src: '../../../assets/chitec/1.PNG',
@@ -125,6 +125,95 @@ export class PortfolioDetailComponent implements OnInit {
         },
       ],
       intro_video: true,
+      tools: [
+        {
+          name: 'Angular',
+          src: 'angular.webp'
+        },
+        {
+          name: 'Typescript',
+          src: 'typescript.webp'
+        },
+        {
+          name: 'Html5',
+          src: 'html5.webp'
+        },
+        {
+          name: 'Sass',
+          src: 'sass.webp'
+        },
+        {
+          name: 'Bootstrap',
+          src: 'bootstrap.webp'
+        },
+        {
+          name: 'Echarts',
+          src: 'echarts.png'
+        },
+        {
+          name: 'Lodash',
+          src: 'lodash.png'
+        },
+        {
+          name: 'Git',
+          src: 'git.webp'
+        },
+      ],
+    },
+    {
+      id: '2',
+      title: '設備建康管理',
+      src: '../../../assets/eim/eim-banner.png',
+      description: '◎ 整體系統 : 參與部分功能發想規劃。\n◎ UI/UX : 設計執行。\n◎ 前端 : API串接資料設計、實作頁面。\n',
+      intro: [
+        {
+          src: '../../../assets/ehm/1.png',
+          text: '單一設備監控狀況，提供圖表切換資料切換。'
+        },
+        {
+          src: '../../../assets/ehm/2.PNG',
+          text: '彈性設定圖表臨界值。'
+        },
+        {
+          src: '../../../assets/ehm/3.png',
+          text: '單一設備的即時影像及監控狀況。'
+        },
+      ],
+      intro_video: false,
+      tools: [
+        {
+          name: 'Angular',
+          src: 'angular.webp'
+        },
+        {
+          name: 'Typescript',
+          src: 'typescript.webp'
+        },
+        {
+          name: 'Html5',
+          src: 'html5.webp'
+        },
+        {
+          name: 'Sass',
+          src: 'sass.webp'
+        },
+        {
+          name: 'Bootstrap',
+          src: 'bootstrap.webp'
+        },
+        {
+          name: 'video.js',
+          src: 'videojs.png'
+        },
+        {
+          name: 'Echarts',
+          src: 'echarts.png'
+        },
+        {
+          name: 'Git',
+          src: 'git.webp'
+        },
+      ],
     }
   ]
 
